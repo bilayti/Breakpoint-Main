@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Breakpoint-Master.master.cs" Inherits="Breakpoint_Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/responsee.css" />
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="size-1140">
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <nav>
+                    <div class="line">
+                        <div class="s-12 l-2">
+                            <img class="s-5 l-12 center" src="img/break-logo.png" />
+
+                        </div>
+                        <div class="top-nav s-12 l-9 right">
+                            <p class="nav-text">MENU</p>
+                            <ul class="right">
+                                <li><a href="Default.aspx">HOME</a></li>
+                                <li>
+                                    <a style="color: white; font-family: Verdana">SERVICES</a>
+
+                                    <ul>
+                                        <li><a>Manage Online Identity</a>
+                                            <ul>
+                                                <li><a href="#">Domain registration,renewal,transfer</a></li>
+                                                <li><a href="#">Web hosting on Windows</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="FrmWebsiteDesigning.aspx">Website Designing & Maintenence</a></li>
+                                        <li><a href="#">Content Management System</a></li>
+                                        <li><a href="FrmSchoolERP.aspx">School Management Application</a></li>
+                                        <li><a>Customer Relationship Management</a></li>
+                                        <%--<li><a>Project Management System</a></li>--%>
+                                        <li><a>Online Quiz for Coaching Institute </a></li>
+                                        <li><a>Mobile App</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a style="color: white; font-family: Verdana">COMPANY</a>
+                                    <ul>
+                                        <li><a href="FrmAboutUs.aspx">ABOUT US</a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="FrmContactUs.aspx">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer class="box">
+                <div class="line">
+                    <div class="s-12 l-12">
+                        <p>
+                            <%--<a class="right" href="http://www.breakpoint-solution.com" title="Breakpoint Solution">Design and coding by Responsee Team</a>--%>
+
+
+                            <div class="s-12 l-9">
+                                <span class="left">© 2016-2021 Breakpoint Solution | All Rights Reserved.</span>
+                            </div>
+                            <div class="s-12 l-3">
+                                <%--<span class="right"><b>Visitors Count:<asp:Label ID="lblCount" runat="server" ForeColor="Red" />
+                                </b></span>--%>
+                            </div>
+                    </div>
+
+
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
